@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku Pena Ilmu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ===== HEADER DAN NAVIGASI ===== -->
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo Toko Buku Pena Ilmu">
+        <span>Toko Buku Pena Ilmu</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===== HERO (BERANDA) ===== -->
+<section id="beranda" class="hero">
+    <h1>Membaca Hari Ini, Memimpin Masa Depan</h1>
+    <p>Toko buku lengkap untuk pelajar SMK: buku pelajaran, novel, dan komik edukasi dengan harga ramah kantong.</p>
+    <a href="#produk" class="tombol">Lihat Koleksi</a>
+</section>
+
+<!-- ===== TENTANG KAMI ===== -->
+<section id="tentang">
+    <h2>Tentang Kami</h2>
+    <div class="tentang-isi">
+        <img src="img/tentang.jpg" alt="Tentang Toko Buku Pena Ilmu">
+        <p>Toko Buku Pena Ilmu berdiri sejak 2015 di Tanjung Priok. Kami menyediakan lebih dari 5.000 judul buku untuk pelajar, guru, dan masyarakat umum. Setiap bulan kami mengadakan diskon pelajar dan kegiatan bedah buku gratis.</p>
+    </div>
+</section>
+
+<!-- ===== PRODUK / LAYANAN ===== -->
+<section id="produk">
+    <h2>Koleksi Favorit</h2>
+    <div class="daftar-produk">
+        <div class="kartu">
+            <img src="img/produk1.jpg" alt="Novel Remaja">
+            <h3>Novel Remaja</h3>
+            <p class="harga">Rp85.000</p>
+            <p>Kisah persahabatan dan perjuangan meraih mimpi.</p>
+        </div>
+        <div class="kartu">
+            <img src="img/produk2.jpg" alt="Buku Pelajaran SMK">
+            <h3>Buku Pelajaran SMK</h3>
+            <p class="harga">Rp95.000</p>
+            <p>Buku pelajaran kejuruan sesuai Kurikulum Merdeka.</p>
+        </div>
+        <div class="kartu">
+            <img src="img/produk3.jpg" alt="Komik Edukasi">
+            <h3>Komik Edukasi</h3>
+            <p class="harga">Rp55.000</p>
+            <p>Belajar sains dan sejarah lewat cerita bergambar.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== KONTAK ===== -->
+<section id="kontak">
+    <h2>Hubungi Kami</h2>
+    <div class="kontak-isi">
+        <div class="info">
+            <p><strong>Alamat:</strong> Jl. Enggano No. 15, Tanjung Priok, Jakarta Utara</p>
+            <p><strong>Telepon:</strong> 0812-3456-7801</p>
+            <p><strong>Jam Buka:</strong> Senin - Sabtu, 08.00 - 20.00 WIB</p>
+        </div>
+        <form>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" placeholder="Nama lengkap" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="contoh@email.com" required>
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" rows="4" placeholder="Tulis pesan Anda"></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+</section
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>&copy; 2026 Toko Buku Pena Ilmu | Dibuat oleh: Nama Siswa - X RPL</p>
+</footer>
+
+</body>
+</html>
+<style>
+    /* ===== PENGATURAN UMUM ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #F4F8FB;
+}
+
+/* ===== HEADER DAN NAVIGASI ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8%;
+    background-color: #065A82;
+    position: stick
+top: 0;
+    z-index: 10;
+}
+ 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.logo img {
+    width: 45px;
+}
+ 
+.logo span {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+ 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+nav a:hover {
+    color: #E8A33D;
+}
+
+/* ===== HERO ===== */
+.hero {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 8%;
+    color: #ffffff;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+ 
+.hero h1 {
+    font-size: 44px;
+    max-width: 650px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+ 
+.hero p {
+    font-size: 18px;
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+ 
+.tombol {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #E8A33D;
+    color: #222222;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+}
+ 
+.tombol:hover {
+    background-color: #ffffff;
+}
+/* ===== SECTION UMUM ===== */
+section {
+    padding: 60px 8%;
+}
+ 
+section h2 {
+    text-align: center;
+    color: #065A82;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+ 
+/* ===== TENTANG ===== */
+.tentang-isi {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+ 
+.tentang-isi img {
+    width: 45%;
+    border-radius: 12px;
+}
+ 
+.tentang-isi p {
+    font-size: 17px;
+}
+
+/* ===== PRODUK ===== */
+#produk {
+    background-color: #ffffff;
+}
+ 
+.daftar-produk {
+    display: flex;
+    gap: 25px;
+}
+ 
+.kartu {
+    flex: 1;
+    background-color: #F4F8FB;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+ 
+.kartu:hover {
+    transform: translateY(-8px);
+}
+ 
+.kartu img {
+    width: 100%;
+}
+ 
+.kartu h3 {
+    margin: 12px 0 5px;
+    color: #065A82;
+}
+ 
+.kartu p {
+    padding: 0 15px;
+}
+ 
+.harga {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E8A33D;
+}
+
+/* ===== KONTAK ===== */
+.kontak-isi {
+    display: flex;
+    gap: 40px;
+}
+ 
+.info {
+    flex: 1;
+}
+ 
+.info p {
+    margin-bottom: 15px;
+}
+ 
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+ 
+form input,
+form textarea {
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    font-family: inherit;
+}
+ 
+form button {
+    padding: 12px;
+    background-color: #065A82;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ 
+form button:hover {
+    background-color: #E8A33D;
+    color: #222222;
+</style>
